@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{446D5A1A-9558-429D-B24B-D23C56D598F8}</ProjectGuid>
+    <RootNamespace>My2DTekkit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2.nuget.2.30.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\2D Tekkit\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Artist.cpp" />
+    <ClCompile Include="Boot.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Artist.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="FPSCounter.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets" Condition="Exists('..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2.nuget.2.30.0\build\native\sdl2.nuget.targets" Condition="Exists('..\packages\sdl2.nuget.2.30.0\build\native\sdl2.nuget.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets" Condition="Exists('..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets" Condition="Exists('..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.redist.2.30.0\build\native\sdl2.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2.nuget.2.30.0\build\native\sdl2.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.2.30.0\build\native\sdl2.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets'))" />
+  </Target>
+</Project>
