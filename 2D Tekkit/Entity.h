@@ -106,8 +106,7 @@ public:
 
 		void draw()
 		{
-			Artist artist;//JUST LAUNCH IT AND YOU KNOEW SOMTHING SO GET UR ASS IN GEAR AND FIX IT
-			//MAKE IT GO THRU ALL SECTIONS AND ADD OFFSET AND FLIP SAID OFFSET IF FACING LEFT
+			Artist artist;//JUST LAUNCH IT AND YOU WILL KNOW SOMTHING IS WRONG SO GET UR ASS IN GEAR AND FIX IT
 			for (int i = 0; i < sectionSets.size(); i++)
 			{
 				//find the size of the texture so we can draw it from the center properly
@@ -117,7 +116,7 @@ public:
 				drawOffset.x = drawSize.x / 2;
 				drawOffset.y = drawSize.y;
 				//use the vars to draw it
-				if (facingRight)
+				if (facingRight)//CAN BE IMPROVED
 				{
 					Artist::pos screenPos = { (x - drawOffset.x + sectionSets[i].offset.x) * Map::mapZoom - Map::topLeftPOS.x , (y - drawOffset.y + sectionSets[i].offset.y) * Map::mapZoom - Map::topLeftPOS.y };
 					artist.drawImage(sectionSets[i].animationData[sectionSets[i].state][sectionSets[i].drawFrame], screenPos.x, screenPos.y, drawSize.x * Map::mapZoom, drawSize.y * Map::mapZoom, /*rotation*/NULL, NULL, SDL_FLIP_NONE);

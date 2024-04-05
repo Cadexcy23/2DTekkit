@@ -579,11 +579,19 @@ void toggleGravity(int entID)
 	{
 		ent->gravity = 0;
 		ent->sectionSets[0].state = 4;
+		ent->sectionSets[0].drawFrame = 0;
+		ent->movementTimeYStart = 0;
+		ent->knockBackX = 0;
+		ent->knockBackY = 0;
 	}
 	else
 	{
 		ent->gravity = 20;
 		ent->sectionSets[0].state = 2;
+		ent->sectionSets[0].drawFrame = 0;
+		ent->movementTimeYStart = 0;
+		ent->knockBackX = 0;
+		ent->knockBackY = 0;
 	}
 }
 
@@ -1063,18 +1071,18 @@ void Entity::init()
 	//actualy load the entity with the data
 	loadEntity(256, 256, 50, 120, "Player", "player", sectionCounts, sectionOffsets, abilityList, updateHuman);
 
-	loadEntity(256, 256, 50, 120, "Player", "player", sectionCounts, sectionOffsets, abilityList, updateHuman);
 
 	//load Ben the bee
-	//frameCounts = { 2, 2, 1, 1, 20 };
-	//abilityList.resize(6);
-	//abilityList[0] = { SDL_SCANCODE_A, 2, walkLeft };
-	//abilityList[1] = { SDL_SCANCODE_D, 2, walkRight };
-	//abilityList[2] = { SDL_SCANCODE_W, 2, flyUp };
-	//abilityList[3] = { SDL_SCANCODE_S, 2, flyDown };
-	//abilityList[4] = { SDL_SCANCODE_F, 1, toggleGravity };
-	//abilityList[5] = { SDL_SCANCODE_SPACE, 1, jump };
-	//loadEntity(356, 256, 22, 20, "Ben", "bee", frameCounts, abilityList, updateBee);
+	sectionCounts = { { 2, 2, 1, 1, 20 } };
+	sectionOffsets = { {0, 0} };
+	abilityList.resize(6);
+	abilityList[0] = { SDL_SCANCODE_A, 2, walkLeft };
+	abilityList[1] = { SDL_SCANCODE_D, 2, walkRight };
+	abilityList[2] = { SDL_SCANCODE_W, 2, flyUp };
+	abilityList[3] = { SDL_SCANCODE_S, 2, flyDown };
+	abilityList[4] = { SDL_SCANCODE_F, 1, toggleGravity };
+	abilityList[5] = { SDL_SCANCODE_SPACE, 1, jump };
+	loadEntity(356, 256, 22, 20, "Ben", "bee", sectionCounts, sectionOffsets, abilityList, updateBee);
 	
 	//load Goblino
 	//frameCounts = { 4, 4 };

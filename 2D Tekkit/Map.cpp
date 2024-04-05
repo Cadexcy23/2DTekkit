@@ -29,8 +29,7 @@ SDL_Texture* Map::background = NULL;
 void Map::init()
 {
 	//temp
-	srand(2);
-	//srand(clock());
+	srand(clock());
 	
 	//tiles
 	Map::tileMap.resize(mapSize.x);
